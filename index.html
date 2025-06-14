@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nizar-Tech | Tecnología accesible</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #ff4d4f;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-image {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .product-description {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    .product-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ff4d4f;
+      margin-bottom: 1rem;
+    }
+    .btn-buy {
+      background-color: #25D366;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nizar-Tech</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="productos">
+      <div class="product-grid">
+
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <img class="product-image" src="https://ae01.alicdn.com/kf/Sb6e7558e7b3f4c32a0ff0b81ed6df1e0k.jpg" alt="Auriculares TWS" />
+          <div class="product-info">
+            <h3 class="product-title">Auriculares TWS Bluetooth 5.3</h3>
+            <p class="product-description">Sonido envolvente y batería duradera.</p>
+            <div class="product-price">€11,99</div>
+            <a class="btn-buy" href="https://wa.me/34624865364?text=Hola%2C%20quiero%20comprar%20los%20Auriculares%20TWS%20Bluetooth%205.3%20por%2011%2C99%E2%82%AC" target="_blank">Comprar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <img class="product-image" src="https://ae01.alicdn.com/kf/Sff5e3e9154c84aa4a98d5373fd7acdadj.jpg" alt="Cargador rápido" />
+          <div class="product-info">
+            <h3 class="product-title">Cargador rápido USB-C 20W</h3>
+            <p class="product-description">Compatible con iPhone y Android. Carga súper rápida.</p>
+            <div class="product-price">€8,99</div>
+            <a class="btn-buy" href="https://wa.me/34624865364?text=Hola%2C%20quiero%20comprar%20el%20Cargador%20USB-C%2020W%20por%208%2C99%E2%82%AC" target="_blank">Comprar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <img class="product-image" src="https://ae01.alicdn.com/kf/Sa2e9168ebdce4ac99b416f2471e9b2f9i.jpg" alt="Tira LED RGB" />
+          <div class="product-info">
+            <h3 class="product-title">Tira LED RGB con USB</h3>
+            <p class="product-description">Ilumina tu cuarto con colores personalizables.</p>
+            <div class="product-price">€10,99</div>
+            <a class="btn-buy" href="https://wa.me/34624865364?text=Hola%2C%20quiero%20comprar%20la%20Tira%20LED%20RGB%20por%2010%2C99%E2%82%AC" target="_blank">Comprar por WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top: 3rem; text-align: center;">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:contactonizartech@gmail.com">contactonizartech@gmail.com</a></p>
+      <p>Teléfono / WhatsApp: <a href="https://wa.me/34624865364">624 86 53 64</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nizar-Tech. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
